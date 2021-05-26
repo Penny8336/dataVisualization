@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass");
+* {
+  box-sizing: border-box;
+  font: normal 14px/1.5 "Overpass", sans-serif;
+}
+
+.all{
+  background: #deeafa;
+
+}
+#wrapper{
+  background: #fdfcfa;
+  width: 1150px;
+  height: 950px;
+  box-shadow: 0 0 40px rgba(51, 59, 102, 0.5);
+}
+#top{
+  margin-top: 80px;
+
+}
+
+#mid{
+  margin-top: 80px;
+
+}
+
+.count{
+  font-size: 15px;
+  margin-left: 50px;
+  text-transform: uppercase;
+
+}
+
+/* ***************bar chart**************** */
+
+text {
+    font-size: 10px;
+    fill: #A7B2EB;
+    text-transform: uppercase;
+
+}
+  
+.axis path,
+.axis line,
+.gridline line {
+    fill: none;
+    stroke: #A7B2EB;
+    opacity: 0.1;
+    shape-rendering: crispEdges;
+}
+  
+  
+path.domain {
+    fill: none;
+    opacity: 0.1;
+  }
+  
+  .info {
+    background-color: rgb(198, 240, 200); /* Green */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 6px 40px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 120px
+    
+  }
+
+.order {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+.order:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+/* ***************bar chart end**************** */
+
+
+
+/* *************** botton ********************* */
+#buttonlist{
+    margin-top: 80px;
+
+}
+
+.button {
+    background-color: rgb(198, 240, 200); /* Green */
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 10px 10px;
+    /* margin-right: 100px; */
+
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 120px
+  }
+
+.order {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+.order:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+.channel{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+.channel:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+/* *************** botton end****************** */
+
+
+
+
+/* *************** legend ********************* */
+
+.my-legend li {
+  color: rgb(0, 0, 0);
+  font-size: 8px;
+  /* float: left; */
+  list-style: none;
+  margin-left: 0px;
+  margin-bottom: 10px;
+
+  padding-left: 18px;
+  position: relative;
+}
+.my-legend li:before {
+  content: "";
+  height: 12px;
+  left: 0;
+  position: absolute;
+  top: 3px;
+  width: 12px;
+}
+.my-legend li.a:before {
+  background: #EF5350;
+}
+
+.tick text {
+    font-size: 10px;
+  }
+  
+  .vbroadcast-legend {
+    float: left;
+    margin-left: -30px;
+    margin-top: 80px;
+  }
+  .vbroadcast-legend li {
+    color: rgb(0, 0, 0);
+    font-size: 8px;
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+    margin-bottom: 10px;
+
+    padding-left: 30px;
+    position: relative;
+  }
+  .vbroadcast-legend li:before {
+    content: "";
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 12px;
+  }
+  .vbroadcast-legend li.a:before {
+    background: #EF5350;
+  }
+  .vbroadcast-legend li.b:before {
+    background: #FFB74D;
+  }
+  .vbroadcast-legend li.c:before {
+    background: #FFEB3B;
+  }
+  .vbroadcast-legend li.d:before {
+    background: #66BB6A;
+  }
+  .vbroadcast-legend li.e:before {
+    background: #80DEEA;
+  }
+  .vbroadcast-legend li.f:before {
+    background: #29B6F6;
+  }
+  .vbroadcast-legend li.g:before {
+    background: #E1BEE7;
+  }
+  

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- updata -->
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script> -->
+    <link rel="stylesheet" href="./layout.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Create an element where the map will take place -->
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
+    <!-- <script src="geo2rect.js"></script> -->
+
+    
+    <script src="https://unpkg.com/textures@1.2.0/dist/textures.js"></script>
+
+
+  </head>
+  <body class = "all ">
+    <div >
+
+    <div class = "container ">
+      <div id="top" class="row">
+      </div>
+      
+      <div id= "wrapper">
+        <div class="row"> <br>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <h3 style="margin-left: 45px;" >Data Visualization</h3>
+          </div>
+            <div class="col-sm-4" id= "maplegend" ></div>
+            <div id="mapimg" class="col-sm-4">  </div>
+            <div class="col-sm-2"></div></div>
+        
+          <div class="row">
+            <div class="col-sm-7" ></div>
+            <div class="col-sm-3" id= "low" >　　　     low　　　　　　high</div>
+          </div>
+
+<div class="row">
+  <div id= "mid" class="col-md-2" >
+    <div class="count" id="info">State </div>
+    <div class="count" id="statename">null </div>
+    <br>
+    <div class="count" id="info">area</div>
+    <div class="count" id="area" >null</div>
+    <br>
+    <div class="count" id="info">Total Population</div>
+    <div class="count" id="population">null</div>
+    <br>
+    <div class="count" id="info">Under 5 Years</div>
+    <div class="count" id="1">null</div>
+    <br>
+    <div class="count" id="info">5 to 13 Years</div>
+    <div class="count" id="2">null</div>
+    <br>
+    <div class="count" id="info">14 to 17 Years</div>
+    <div class="count" id="3">null</div>
+    <!-- <div class="count" id="info">18 to 24 Years</div>
+    <br>
+    <div class="count" id="4">null</div>
+    <div class="count" id="info">45 to 64 Years</div>
+    <br>
+    <div class="count" id="5">null</div>
+    <div class="count" id="info">65 Years and Over</div>
+    <br>
+    <div class="count" id="6">null</div> -->
+    
+    
+
+  </div>
+  <div class="col-md-8" >
+    <div id="map"></div>
+  </div>
+  <div class="col-md-2" id="buttonlist">
+    <button class = "button channel", onclick= SIZE()>Size</button>
+    <button class = "button channel", onclick= VALUE()>Value</button>
+    <button class = "button channel", onclick= OR()>Orientation</button>
+    <button class = "button channel", onclick= changecolor()>Change Color</button>
+    <button class = "button channel", onclick= SHAPE()>Shape</button>
+    <button class = "button channel", onclick= TEXTURE()>Texture</button>
+
+
+  </div>
+</div>
+
+
+<div class="row">
+<div class="col-md-2">
+  <button class = "info order", onclick=areaInfo()>Area Info</button>  
+  <button class = "info order", onclick="javascript:window.location.reload()">Census Info</button>
+
+  </div>
+<div class="col-md-8" >
+  <div id="chart-bar"></div>
+
+</div>
+<div class="col-md-2" >
+  
+  <ul class="my-legend">
+    <li id="arealegend" class="a">Area</li>
+  </ul>
+  
+  <div id="legend"></div>
+  <ul class="vbroadcast-legend">
+    <li class="a">Under 5 Years	</li>
+    <li class="b">5 to 13 Years	</li>
+    <li class="c">14 to 17 Years	</li>
+    <li class="d">18 to 24 Years	</li>
+    <li class="e">25 to 44 Years	</li>
+    <li class="f">45 to 64 Years	</li>
+    <li class="g">65 Years and Over </li>
+  </ul>
+</div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+      <script  src="./js.js"></script>
+
+  </body>
+</html>

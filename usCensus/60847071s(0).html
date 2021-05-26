@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Stacked Bar Chart D3 with animating numbers</title>
+  
+
+  
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+  <div class="wrapper">
+    <div class="cards">
+      <div class="listen-wrap">
+        <ul>
+          <li>
+            <span class="count" id="States">51</span>
+            <span id="States" >States </span>
+          </li>
+          <li>
+            <span class="count" id = "two">36756666</span>
+            <span>MAX <br>POPULATION</span>
+          </li>
+          <li>
+            <span class="count" id="min">532668</span>
+            <span>MIN <br>POPULATION</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="chart-wrapper" id="chart-bar">
+      <h1>Population</h1>
+      <h1>      <button class = "de", onclick=updateData()>  
+        Descending Order
+      </button>  </h1>
+      <h1>            <button class = "Al", onclick= begining()>  
+        Alphabetical Order
+      </button> </h1>
+    
+
+
+      <ul class="vbroadcast-legend">
+        <li class="a">Under 5 Years	</li>
+        <li class="b">5 to 13 Years	</li>
+        <li class="c">14 to 17 Years	</li>
+        <li class="d">18 to 24 Years	</li>
+        <li class="e">25 to 44 Years	</li>
+        <li class="f">45 to 64 Years	</li>
+        <li class="g">65 Years and Over </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
+
+  
+
+    <script  src="./js0.js"></script>
+
+
+
+
+</body>
+
+</html>
